@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.bam.mapper.AdminMapper"><!-- route of mapping to java -->
+<mapper namespace="com.bam.mapper.AdminMapper"><!--route of mapping to java-->
 	<select id="selectAdmin" resultType="int" parameterType="hashmap">
 		select ifnull(count(*), 0) from ADMIN where NAME = #{admin.name} and PWD = #{admin.pwd}
 	</select>
